@@ -20,3 +20,5 @@ while running: #Loop
         # running bool to false
         if event.type == pygame.QUIT:
             running = False
+
+pygame.quit()
