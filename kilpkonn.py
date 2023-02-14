@@ -67,3 +67,31 @@ for i in range(num_shapes):
 
 # Oota, kuni kasutaja sulgeb akna
 turtle.done()
+
+***************************************************************************************************************************************************
+kilpkonn.txt file:
+    
+forward 100
+right 72
+forward 100
+right 144
+forward 100
+right 72
+forward 100
+right 144
+forward 100
+right 72
+forward 100
+right 144
+forward 100
+right 72
+forward 100
+right 144
+forward 100
+right 72
+forward 100
+right 144
+forward 100
+right 72
+forward 100
+right 144
