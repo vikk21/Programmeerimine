@@ -12,3 +12,14 @@ print(sammud_kokku)
 print(sum(sammude_list)/len(sammude_list))#keskmine arvutamine
 print(min(sammude_list)) #vähima arvutamine
 print(max(sammude_list)) #suurima arvutamine
+
+*****************************************************************************************************************************************
+sammud.txt file:
+    
+10000
+8000
+7654
+5555
+8534
+11000
+3245
