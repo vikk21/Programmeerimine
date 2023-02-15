@@ -8,18 +8,7 @@ print(sammude_list) #prindib sammude listi
 with open('sammud.txt') as f:
     sammude_list = [ int(i) for i in f ]
 sammud_kokku = sum(sammude_list) #liidab sammude listi
-print(sammud_kokku)
-print(sum(sammude_list)/len(sammude_list))#keskmine arvutamine
-print(min(sammude_list)) #vähima arvutamine
-print(max(sammude_list)) #suurima arvutamine
-
-*****************************************************************************************************************************************
-sammud.txt file:
-    
-10000
-8000
-7654
-5555
-8534
-11000
-3245
+print("Sammude arv kokku:" , sammud_kokku)
+print("Keskmine sammude kogus:" , sum(sammude_list)/len(sammude_list))#keskmine arvutamine
+print("Väikseim sammude kogus:" , min(sammude_list)) #vähima arvutamine
+print("Suurim sammude kogus:" , max(sammude_list)) #suurima arvutamine
