@@ -1,20 +1,20 @@
 import turtle
 import random
 
-# Ava kilpkonn.txt fail lugemiseks
+# Avab kilpkonn.txt fail lugemiseks
 with open('kilpkonn.txt', 'r') as f:
     # Loe faili read listi
     lines = f.readlines()
 
-# Loo turtle objekt
+# Loob turtle objekt
 t = turtle.Turtle()
 
-# Määra turtle'i algne positsioon
+# Määrab turtle'i algne positsioon
 t.penup()
 t.goto(0, 0)
 t.pendown()
 
-# Liigu läbi faili read
+# Liigub läbi faili read
 for line in lines:
     # Määra turtle'i pliiatsi värv juhuslikuks
     r = random.random()
@@ -42,10 +42,10 @@ for line in lines:
     elif command == 'right':
         t.right(value)
 
-# Küsi kasutajalt, mitu kuju ta soovib joonistada
-num_shapes = int(input("Mitu kuju soovid joonistada? "))
+# Küsib kasutajalt, mitu kuju ta soovib joonistada.
+num_shapes = int(input("Mitu ruutu sooviksid joonistada?: "))
 
-# Joonista soovitud arv kujusid
+# Joonista soovitud arv kujusid.
 for i in range(num_shapes):
     # Liigu turtle'iga juhuslikule positsioonile ekraanil
     t.penup()
@@ -54,21 +54,21 @@ for i in range(num_shapes):
     t.goto(x, y)
     t.pendown()
 
-    # Määra turtle'i pliiatsi värv juhuslikuks
+    # Määrab turtle'i pliiatsi värv juhuslikuks.
     r = random.random()
     g = random.random()
     b = random.random()
     t.pencolor(r, g, b)
 
-    # Joonista ruut
+    # Ruudu joonistamise valem.
     for j in range(4):
         t.forward(50)
         t.right(90)
 
-# Oota, kuni kasutaja sulgeb akna
+# Sulgeb akna
 turtle.done()
 
-***************************************************************************************************************************************************
+**********************
 kilpkonn.txt file:
     
 forward 100
