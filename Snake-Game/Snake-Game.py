@@ -11,11 +11,13 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-dis_width = 600
-dis_height = 400
+dis_width = 640
+dis_height = 640
 
 dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Snake Game by Edureka')
+pygame.display.set_caption('Snake Game')
+pygame.mixer.music.load('MainMusic.mp3')
+pygame.mixer.music.play(0)
 
 clock = pygame.time.Clock()
 
@@ -71,6 +73,7 @@ def gameLoop():
     while not game_over:
 
         while game_close == True:
+            pygame.mixer.music.stop()
             dis.fill(blue)
             message("You Lost! Press C-Play Again or Q-Quit", red)
             Your_score(Length_of_snake - 1)
@@ -105,7 +108,12 @@ def gameLoop():
             game_close = True
         x1 += x1_change
         y1 += y1_change
-        dis.fill(blue)
+
+        # loob tausta ning lisab selle sinna
+        tausttt = pygame.image.load("background_dirt.jpg")
+        tausttt = pygame.transform.scale(tausttt, [640, 640])
+        dis.blit(tausttt, [0, 0])
+
         pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
         snake_Head = []
         snake_Head.append(x1)
