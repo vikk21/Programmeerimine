@@ -1,5 +1,5 @@
 import pygame # impordib pygame'i mooduli
-import time # impordib time'i mooduli
+import time # impordib aja'i mooduli
 import random # impordib randomi mooduli
 
 pygame.init() # initsialiseerib pygame'i
