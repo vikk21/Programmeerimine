@@ -44,5 +44,5 @@ while running:
     # Uuendab ekraani
     pygame.display.update()
 
-# Paneb mängu kinni
+# Paneb mängu kinni.
 pygame.quit()
