@@ -5,15 +5,15 @@ import pygame
 pygame.init()
 pygame.display.set_mode((640, 480))
 
-# Defineeri akna suurus ja pealkirja
+# Akna suurus ja pealkiri
 width = 640
 height = 480
-title = "Ruudustiku Joonistamise Programm"
+title = "Ruudud"
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption(title)
 
 # Kasutaja sisestab andmed
-cube_size = int(input("Sisesta iga ruudu suurus (pikslites): "))
+cube_size = int(input("Sisesta iga ruudu suurus: "))
 num_rows = int(input("Sisesta ridade arv: "))
 num_cols = int(input("Sisesta veergude arv: "))
 line_color_input = input("Sisesta joonte värv (RGB väärtused komadega eraldatult, nt 255,0,0 punase jaoks): ")
